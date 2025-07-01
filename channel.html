@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create New Channel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="channel.css">
+</head>
+<body>
+  <div class="page-container">
+    <div class="create-box">
+      <div class="close-button">&times;</div>
+      <h2>Create New Channel</h2>
+
+      <div class="form-group">
+        <label for="channel-name"><span class="symbol">#</span> Channel Name</label>
+        <input type="text" id="channel-name" placeholder="Enter Channel Name">
+      </div>
+
+      <div class="form-group toggle-group">
+        <label for="private-switch">
+          <span class="symbol">🔒</span> Private Channel
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="private-switch">
+          <span class="slider round"></span>
+        </label>
+        <p class="note">Only selected members and positions will<br> be able to view this channel</p>
+      </div>
+
+      <button class="submit-button">Create Channel</button>
+    </div>
+  </div>
+</body>
+</html>

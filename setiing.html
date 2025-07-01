@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings Page</title>
+  <link rel="stylesheet" href="setiing.css" />
+</head>
+<body>
+  <div class="settings-container">
+    <aside class="sidebar">
+      <h2>Setting</h2>
+      <input type="text" class="search-box" placeholder="Search..." />
+      <ul class="menu">
+        <li class="active">
+          <img src="acc.png" alt="Account" />
+          Account
+        </li>
+        <li><img src="notif.jpg" alt="Notification" /> Notification</li>
+        <li><img src="mes.png" alt="Messages & Media" /> Messages & Media</li>
+        <li><img src="lan.png" alt="Language & Region" /> Language & Region</li>
+        <li><img src="theme.png" alt="Themes" /> Themes</li>
+        <li><img src="aud.jpg" alt="Audio & Video" /> Audio & Video</li>
+        <li><img src="con.png" alt="Connected accounts" /> Connected accounts (?)</li>
+        <li>Privacy</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="header">
+        <h2>Account</h2>
+        <span class="close-btn">✕</span>
+      </div>
+
+      <section class="profile-section">
+        <h3>Profile</h3>
+        <div class="profile-content">
+          <img src="profile.jpg" alt="Profile" class="profile-pic" />
+          <div class="form-fields">
+            <label>DISPLAY NAME</label>
+            <input type="text" value="Michelle Tuwaidan" />
+            <label>BIRTHDAY</label>
+            <input type="text" value="22/9/2024" />
+            <label class="checkbox">
+              <input type="checkbox" checked />
+              Show Birthday to Public
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="account-section">
+        <h3>Account</h3>
+        <div class="input-row">
+          <div class="form-group">
+            <label>FIRST NAME</label>
+            <input type="text" value="John" />
+          </div>
+          <div class="form-group">
+            <label>LAST NAME</label>
+            <input type="text" value="Doe" />
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="email" value="michelle@gmail.com" />
+          </div>
+          <div class="form-group">
+            <label>PHONE NUMBER</label>
+            <input type="tel" value="+1 10293810293" />
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="password-section">
+        <h3>Password</h3>
+        <p>Change your password. We'll send a prompt to your email address to securely update it.</p>
+        <button class="change-password-btn">Change Password</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

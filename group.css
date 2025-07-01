@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+.group-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+
+.group-form-container {
+  width: 460px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  position: relative;
+  background: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+
+.member.highlight {
+  background-color: #f0eaff;
+}
+
+.member img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.member span {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.member .remove {
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background-color: #7b61ff;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

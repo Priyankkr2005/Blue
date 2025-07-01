@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - Themes</title>
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <div class="settings-page">
+    <aside class="sidebar">
+      <h2>Setting</h2>
+      <input type="text" class="search-box" placeholder="Search..." />
+      <ul class="menu">
+        <li><img src="acc.png" /> Account</li>
+        <li><img src="notif.jpg" /> Notification</li>
+        <li><img src="mes.png" /> Messages & Media</li>
+        <li><img src="lan.png" /> Language & Region</li>
+        <li class="active"><img src="theme.png" /> Themes</li>
+        <li><img src="aud.jpg" /> Audio & Video</li>
+        <li><img src="con.png" /> Connected accounts (?)</li>
+        <li>Privacy</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="content-container">
+        <div class="header">
+          <h2>Themes</h2>
+          <span class="close-btn">✕</span>
+        </div>
+
+        <section class="form-section">
+          <h4>Color Mode</h4>
+          <p>Choose if display’s appearance should be light or dark, or follow your computer’s settings.</p>
+          <div class="theme-toggle">
+            <button class="light active"><img src="light.png" /> Light</button>
+            <button class="dark"><img src="moon.png" /> Dark</button>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="form-section">
+          <h4>Themes</h4>
+          <div class="theme-grid">
+            <div class="theme-box purple active"><span class="dot"></span><span class="label purple-text">Purple</span></div>
+            <div class="theme-box orange"><span class="dot"></span><span class="label orange-text">Orange</span></div>
+            <div class="theme-box red"><span class="dot"></span><span class="label red-text">Red</span></div>
+            <div class="theme-box blue"><span class="dot"></span><span class="label blue-text">Blue</span></div>
+            <div class="theme-box green"><span class="dot"></span><span class="label green-text">Green</span></div>
+            <div class="theme-box pink"><span class="dot"></span><span class="label pink-text">Pink</span></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

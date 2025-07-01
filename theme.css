@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+}
+
+.settings-page {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #f1ebff;
+  width: 250px;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  gap: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu li.active {
+  background: white;
+  font-weight: 500;
+}
+
+.menu li img {
+  width: 18px;
+  height: 18px;
+}
+
+.main-content {
+  flex: 1;
+  background: white;
+  padding: 30px;
+}
+
+.content-container {
+  max-width: 800px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 22px;
+}
+
+.close-btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-section {
+  margin-top: 30px;
+}
+
+.form-section h4 {
+  margin-bottom: 10px;
+}
+
+.theme-toggle {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.theme-toggle button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggle button.active {
+  background: #805ad5;
+  color: white;
+  border: 2px solid #805ad5;
+}
+
+.theme-toggle img {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.theme-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.theme-box.active {
+  border: 2px solid #805ad5;
+}
+
+.theme-box .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.theme-box .label {
+  font-weight: 500;
+}
+
+.purple .dot { background: #805ad5; }
+.orange .dot { background: #f78b3e; }
+.red .dot { background: #ff5a5a; }
+.blue .dot { background: #59aaff; }
+.green .dot { background: #30d67f; }
+.pink .dot { background: #f990c0; }
+
+.purple-text { color: #805ad5; }
+.orange-text { color: #f78b3e; }
+.red-text { color: #ff5a5a; }
+.blue-text { color: #59aaff; }
+.green-text { color: #30d67f; }
+.pink-text { color: #f990c0; }

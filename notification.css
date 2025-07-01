@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+}
+
+.settings-page {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #efe9fc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.menu li.active {
+  background-color: white;
+  font-weight: bold;
+}
+
+.menu li img {
+  width: 16px;
+  height: 16px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-section {
+  margin: 30px 0;
+}
+
+.form-section h4 {
+  margin-bottom: 10px;
+}
+
+.form-section label {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.main-content {
+  flex: 1;
+  padding: 40px 0;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}

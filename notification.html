@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - Notification</title>
+  <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+  <div class="settings-page">
+    <aside class="sidebar">
+      <h2>Setting</h2>
+      <input type="text" placeholder="Search..." class="search-box" />
+      <ul class="menu">
+        <li><img src="acc.png" /> Account</li>
+        <li class="active"><img src="notif.jpg" /> Notification</li>
+        <li><img src="mes.png" alt="Messages & Media" /> Messages & Media</li>
+        <li><img src="lan.png" alt="Language & Region" /> Language & Region</li>
+        <li><img src="theme.png" alt="Themes" /> Themes</li>
+        <li><img src="aud.jpg" alt="Audio & Video" /> Audio & Video</li>
+        <li><img src="con.png" alt="Connected accounts" /> Connected accounts (?)</li>
+        <li>Privacy</li>
+      </ul>
+    </aside>
+<main class="main-content">
+  <div class="content-container">
+    <div class="header">
+      <h2>Notification</h2>
+      <span class="close-btn">✕</span>
+    </div>
+
+    <section class="form-section">
+      <h4>Notify me about…</h4>
+      <label><input type="radio" name="notify" checked> All new messages</label>
+      <label><input type="radio" name="notify"> Direct messages, mention & keywords</label>
+      <label><input type="radio" name="notify"> None</label>
+    </section>
+
+    <hr>
+
+    <section class="form-section">
+      <label><input type="checkbox" checked> Notify me when….</label>
+      <label><input type="checkbox" checked> Notify me when….</label>
+      <label><input type="checkbox"> Notify me when….</label>
+    </section>
+
+    <hr>
+
+    <section class="form-section">
+      <h4>Notification schedule</h4>
+      <p>
+        You'll only receive notifications in the hours you choose. Outside of those
+        times, notifications will be paused. <a href="#">Learn more</a>
+      </p>
+      <div class="schedule">
+        <select>
+          <option>Every day</option>
+        </select>
+        <select>
+          <option>8:00 am</option>
+        </select>
+        <span>to</span>
+        <select>
+          <option>10:00 pm</option>
+        </select>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="form-section">
+      <h4>Email Notification</h4>
+      <label><input type="checkbox" checked> Notify me when….</label>
+      <label><input type="checkbox" checked> Notify me when….</label>
+      <label><input type="checkbox" checked> Notify me when….</label>
+    </section>
+  </div>
+</main>

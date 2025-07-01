@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - Messages & Media</title>
+  <link rel="stylesheet" href="message.css">
+</head>
+<body>
+  <div class="settings-page">
+    <aside class="sidebar">
+      <h2>Setting</h2>
+      <input type="text" placeholder="Search..." class="search-box" />
+      <ul class="menu">
+        <li><img src="acc.png" /> Account</li>
+        <li><img src="notif.jpg" /> Notification</li>
+        <li class="active"><img src="mes.png" alt="Messages & Media" /> Messages & Media</li>
+        <li><img src="lan.png" alt="Language & Region" /> Language & Region</li>
+        <li><img src="theme.png" alt="Themes" /> Themes</li>
+        <li><img src="aud.jpg" alt="Audio & Video" /> Audio & Video</li>
+        <li><img src="con.png" alt="Connected accounts" /> Connected accounts (?)</li>
+        <li>Privacy</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="content-container">
+        <div class="header">
+          <h2>Messages & Media</h2>
+          <span class="close-btn">✕</span>
+        </div>
+
+        <section class="form-section">
+          <h4>Who can send you a direct message</h4>
+          <label><input type="radio" name="dm" checked> Everyone</label>
+          <label><input type="radio" name="dm"> Only friends and people in the same group as you</label>
+          <label><input type="radio" name="dm"> None</label>
+        </section>
+
+        <hr>
+
+        <section class="form-section">
+          <p class="bold">Download all media?</p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emoji Picker</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emoji-mart@5.4.0/dist/emoji-mart.css">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1e1e1e;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #picker-container {
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    #output {
+      color: white;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="picker-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emoji-mart@5.4.0/dist/browser.js"></script>
+  <script>
+    new EmojiMart.Picker({
+      parent: document.querySelector("#picker-container"),
+      theme: "dark",
+      set: "apple",
+      showPreview: false,
+      showSkinTones: true,
+      emojiButtonRadius: "6px",
+      onEmojiSelect: (emoji) => {
+        console.log("Selected emoji:", emoji.native);
+        document.getElementById("emoji-output").innerText = emoji.native;
+      }
+    });
+  </script>
+
+</body>
+</html>

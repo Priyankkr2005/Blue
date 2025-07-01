@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - Language & Region</title>
+  <link rel="stylesheet" href="language.css">
+</head>
+<body>
+  <div class="settings-page">
+    <aside class="sidebar">
+      <h2>Setting</h2>
+      <input type="text" placeholder="Search..." class="search-box" />
+      <ul class="menu">
+        <li><img src="acc.png" /> Account</li>
+        <li><img src="notif.jpg" /> Notification</li>
+        <li><img src="mes.png" /> Messages & Media</li>
+        <li class="active"><img src="lan.png" /> Language & Region</li>
+        <li><img src="theme.png" /> Themes</li>
+        <li><img src="aud.jpg" /> Audio & Video</li>
+        <li><img src="con.png" /> Connected accounts (?)</li>
+        <li>Privacy</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="content-container">
+        <div class="header">
+          <h2>Language & region</h2>
+          <span class="close-btn">✕</span>
+        </div>
+
+        <section class="form-section">
+          <label class="section-title">Language</label>
+          <p class="description">Choose your preferred language.</p>
+          <select>
+            <option>English (US)</option>
+          </select>
+        </section>
+
+        <section class="form-section">
+          <label class="section-title">Timezone</label>
+          <label class="checkbox-label">
+            <input type="checkbox" checked />
+            Set time zone automatically
+          </label>
+          <select>
+            <option>(UTC +7) Bangkok, Hanoi, Jakarta</option>
+          </select>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

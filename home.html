@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Dashboard</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="dashboard-wrapper">
+
+    <!-- Leftmost icon bar -->
+    <div class="icon-bar">
+      <button class="icon-button active" aria-label="Home">
+        <img src="home.png" alt="Home" />
+      </button>
+      <button class="icon-button" aria-label="DMs">
+        <img src="dm.png" alt="DMs" />
+      </button>
+      <button class="icon-button" aria-label="Settings">
+        <img src="setting.png" alt="Settings" />
+      </button>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="header">Blue Pigeon</div>
+      <div class="sidebar-content">
+        <div class="org">
+          <div class="org-name">White Code Labs</div>
+          <div class="dropdown">▼</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">CHANNELS</div>
+          <div class="channel active toggle-header" onclick="toggleDropdown('channel-list')"># general</div>
+          <div id="channel-list" class="dropdown-list">
+          </div>
+          <div class="add-option">+ Create New Channel</div>
+        </div>
+
+        <div class="section">
+          <div class="toggle-header" onclick="toggleDropdown('team-list')">▼ Teams</div>
+          <div id="team-list" class="dropdown-list">
+          </div>
+          <div class="add-option">+ Create New Team</div>
+        </div>
+
+        <div class="section">
+          <div class="toggle-header" onclick="toggleDropdown('integration-list')">▼ Integrations</div>
+          <div id="integration-list" class="dropdown-list">
+          </div>
+          <div class="add-option">+ Create Integrations</div>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="avatar.jpg" alt="avatar" />
+        <span>Michelle Tuwaidan</span>
+        <span class="status">Online</span>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="main-header">
+        <span># general</span>
+        <input type="text" placeholder="Search for directory, date, and more" />
+      </div>
+      <div class="main-body">
+        <div class="wave">👋</div>
+        <h2>Welcome to White Code Labs</h2>
+        <p>There’s nothing here yet. Get started by:</p>
+        <button class="action-btn">🧑‍🤝‍🧑 Add Your Teammates</button><br>
+        <button class="action-btn">🧩 Create New Integration</button><br>
+        <button class="action-btn">👥 Organize a New Team</button>
+        <div class="bottom-icons">
+          <button class="mic">🎤</button>
+          <button class="plus">+</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDropdown(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
